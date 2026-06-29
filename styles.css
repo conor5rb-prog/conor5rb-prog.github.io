@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:ital@0;1&display=swap');
+
+:root {
+    --gold: #d4af37;
+    --dark: #0a0a0a;
+    --stone: #2c2c2c;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    background: linear-gradient(#0a0a0a, #1a0f00);
+    color: #e0d4b3;
+    margin: 0;
+    line-height: 1.7;
+}
+
+header {
+    background: rgba(10,10,10,0.98);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 4px solid var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+h1 { 
+    font-family: 'Cinzel', serif; 
+    margin: 0; 
+    font-size: 2.4rem;
+    text-shadow: 0 0 20px var(--gold);
+}
+
+.subtitle { font-style: italic; opacity: 0.9; }
+
+#nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#nav button {
+    padding: 12px 24px;
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#nav button.active, #nav button:hover {
+    background: var(--gold);
+    color: #0a0a0a;
+    box-shadow: 0 0 20px var(--gold);
+}
+
+.search-bar {
+    padding: 1rem;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.search-bar input {
+    width: 90%;
+    max-width: 700px;
+    padding: 14px;
+    font-size: 1.1rem;
+    background: #1f1f1f;
+    border: 2px solid var(--gold);
+    color: #e0d4b3;
+    border-radius: 6px;
+}
+
+.card {
+    background: var(--stone);
+    border: 2px solid #5c4033;
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin: 15px;
+    box-shadow: 0 0 15px rgba(212,175,55,0.2);
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(212,175,55,0.5);
+}
+
+.glow { animation: glow 4s infinite alternate; }
+@keyframes glow { from {text-shadow:0 0 10px #d4af37;} to {text-shadow:0 0 40px #ffcc00;} }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); gap: 1.5rem; padding: 1rem; }
+
+img.map { max-width: 100%; border: 5px solid var(--gold); box-shadow: 0 0 30px black; }
+
+footer { text-align:center; padding:2rem; opacity:0.7; font-size:0.9rem; }

@@ -1,0 +1,15 @@
+{
+  "name": "Anunnaki Archives - Sumerian Tablets",
+  "short_name": "SumerianApp",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192?text=🏺",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
